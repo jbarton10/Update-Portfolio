@@ -1,0 +1,10 @@
+#bg-image{
+    background: url("./../images/beach-blur-boardwalk-132037.jpg") no-repeat;
+    background-size: cover;
+    /*Blur the background image */
+    filter: blur(8px);
+    height: 100vh;
+    width:100vw;
+    z-index: -10;
+}
+
