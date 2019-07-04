@@ -1,28 +1,43 @@
+/* Ever Present elements */
 #bg-image{
-    background: url("./../images/beach-blur-boardwalk-132037.jpg") no-repeat;
+    background: url("./../images/bgPhoto.jpg") no-repeat;
     background-size: cover;
     /*Blur the background image */
     filter: blur(8px);
     height: 100vh;
     width:100%;
     /* Make it appear behind the content */
-    z-index: -10;
-}
-.container{
-    z-index: 10;
-}
-#content{
-    
-    
+    z-index: -1;
+    position: absolute;
 }
 .category{
-    /* Colors will change */
     color:white;
-    background:black;
+    background: rgb(64, 44, 117);
     margin-top: 10px;
     margin-bottom: 10px;
     padding:10px;
-    width:40%;
+    width:70%;
     padding-left:15px;
 }
+.container{
+    z-index: 1;
+    /* The only way Ive been able to get the content over the bg image */
+    /* position: fixed;
+    top:0px; */
+}
 
+
+/* Home Elements */
+#pPic{
+    height:150px;
+    width:150px;
+}
+#content{
+    background:lightgray;
+    width:100%;
+    padding:20px;
+}
+#homeContent{
+    align-items: center;
+    text-align: center;
+}
