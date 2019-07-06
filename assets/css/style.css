@@ -1,4 +1,7 @@
 /* Ever Present elements */
+.col-6{
+    margin-right:15px;
+}
 #bg-image{
     background: url("./../images/bgPhoto.jpg") no-repeat;
     background-size: cover;
@@ -11,33 +14,79 @@
     position: absolute;
 }
 .category{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:white;
     background: rgb(64, 44, 117);
     margin-top: 10px;
     margin-bottom: 10px;
     padding:10px;
-    width:70%;
+    width:100%;
     padding-left:15px;
 }
 .container{
     z-index: 1;
-    /* The only way Ive been able to get the content over the bg image */
-    /* position: fixed;
-    top:0px; */
-}
-
-
-/* Home Elements */
-#pPic{
-    height:150px;
-    width:150px;
 }
 #content{
     background:lightgray;
     width:100%;
     padding:20px;
+    margin-top: 150px;
 }
+#menu{
+    margin-top: 150px;
+}
+.contactInfo{
+    z-index: 1;
+    margin-top: 150px;
+    background: lightgray;
+    padding: 20px;
+    height:300px;
+}
+.info{
+    color: rgb(64, 44, 117);
+}
+.category:hover{
+    background:lightgrey;
+    color:rgb(64, 44, 117);
+}
+.category:active{
+    background: rgb(221, 198, 204);
+}
+
+
+/* Home Elements */
+
 #homeContent{
-    align-items: center;
+    background: lightgray;
+    
+}
+#underLine{
+    height:1px;
+    background:gray;
+    width:70%;
+    /* Temporary */
+    margin-bottom:100px;
+}
+#introTitle{
+    font-size: 60px;
+}
+#introText{
     text-align: center;
+    margin-bottom: 100px;
+}
+
+/* Project Elements */
+#pTUnderText{
+    color:lightgrey;
+}
+/* Bio Elements */
+#bioContent{
+    position: relative;
+}
+#pPic{
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    float:left;
+    margin:5px; 
 }
